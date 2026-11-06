@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --navy: #080e1a;
+  --gold: #e8b575;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--navy);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.gold-bg {
+  background: var(--gold);
+}
+
+.section-title {
+  color: var(--gold);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+}
